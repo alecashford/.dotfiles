@@ -1,0 +1,15 @@
+# Install dependencies
+
+# Homebrew first
+
+# . ~/.dotfiles/.profile/.bashrc
+# Then the rest
+
+# Load bash profile
+for file in ~/.dotfiles/.profile/.*; do
+    if [ -f "$file" ] ; then
+        . "$file"
+    fi
+done
+
+# Create symlinks for other config files and folders
